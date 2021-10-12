@@ -1,0 +1,10 @@
+include ../mixins/btn
+
+header.header
+  .cmn__wrapper.header__wrapper
+      .header__nav
+        include ./nav
+
+      .header__content
+        +btn('#', 'Кнопка заказа звонка')(class="cmn__btn header__btn")
+        a(href="tel:8(953)7484772").header__phone 8 (953) 748 47 72

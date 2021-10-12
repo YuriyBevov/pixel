@@ -1,0 +1,38 @@
+.cmn {
+    &__wrapper {
+        @include container();
+    }
+
+    &__title {
+        font-size: 4.2rem;
+        line-height: 4.9rem;
+
+        color: $col_black;
+    }
+
+    &__text {
+        font-family: $font_thin;
+        font-size: 2rem;
+        line-height: 2.3rem;
+
+        color: $col_black;
+
+        &--white {
+            color: $col_white;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        text-align: center;
+        font-family: $font_sec;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        //width: fit-content;
+        min-width: 17rem;
+        padding: 1.8rem;
+        border: 1px solid $col_black;
+
+        color: $col_black;
+    }
+}

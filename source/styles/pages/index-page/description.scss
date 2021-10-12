@@ -1,0 +1,27 @@
+.description {
+    padding: 3rem 0;
+
+    &__wrapper {
+
+    }
+
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin-bottom: 3.2rem;
+
+        &-content {
+            margin-right: auto;
+            width: 80%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &__desc {
+        max-width: 130rem;
+    }
+}

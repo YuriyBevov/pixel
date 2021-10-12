@@ -1,0 +1,25 @@
+.header {
+    padding: 5.4rem 0;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__nav {
+        margin-right: auto;
+    }
+
+    &__btn {
+        margin-right: 2.2rem;
+    }
+
+    &__phone {
+        font-family: $font_bold;
+        font-size: 2rem;
+        line-height: 2.3rem;
+
+        color: $col_lightblack;
+    }
+}

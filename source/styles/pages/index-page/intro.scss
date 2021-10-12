@@ -1,0 +1,12 @@
+.intro {
+    padding: 6rem 0;
+
+    &__title {
+        max-width: 75rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__desc {
+        max-width: 120rem;
+    }
+}
