@@ -6,6 +6,7 @@
     &__title {
         font-size: 4.2rem;
         line-height: 4.9rem;
+        font-weight: 400;
 
         color: $col_black;
     }
@@ -20,6 +21,10 @@
         &--white {
             color: $col_white;
         }
+
+        &--bold {
+            font-family: $font_bold;
+        }
     }
 
     &__btn {
@@ -28,11 +33,16 @@
         font-family: $font_sec;
         font-size: 1.4rem;
         line-height: 1.9rem;
-        //width: fit-content;
         min-width: 17rem;
         padding: 1.8rem;
         border: 1px solid $col_black;
 
         color: $col_black;
+
+        &--white {
+            border: 1px solid $col_white;
+
+            color: $col_white;
+        }
     }
 }

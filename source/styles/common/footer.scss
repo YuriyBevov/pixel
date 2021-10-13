@@ -1,3 +1,134 @@
 .footer {
+    padding: 4rem 0;
+    background-color: #3E3E3E;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 12rem;
+            height: 5.1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        span {
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    &__order {
+        flex-grow: 1;
+        padding: 0 9rem;
+
+        &-form {
+            display: flex;
+        }
+
+        &-form-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-top: auto;
+        }
+
+        &-title {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            margin-bottom: 2.4rem;
+
+            color: $col_white;
+        }
+
+        fieldset {
+            display: flex;
+            flex-wrap: wrap;
+
+            border: none;
+            padding: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 1.6rem;
+            }
+        }
+
+        input {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            width: 27rem;
+            margin-right: 2rem;
+            border: none;
+            border-bottom: 1px solid $col_white;
+            background-color: #3E3E3E;
+            color: $col_white;
+
+            &::placeholder {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                
+                color: $col_white;
+            }
+        }
+
+        label {
+            position: relative;
+            width: 100%;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            padding-left: 3rem;
+            color: $col_white;
+
+            a {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                text-decoration-line: underline;
+                color: $col_white;
+            }
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                content: '';
+
+                width: 1.6rem;
+                height: 1.6rem;
+                border: 1px solid $col_white;
+            }
+        }
+
+        input:checked + label::before {
+            background-color: white; // temp
+        }
+
+        &-btn {
+            border: none;
+            display: inline-block;
+            text-align: center;
+            font-family: $font_sec;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            min-width: 17rem;
+            height: fit-content;
+            padding: 1.8rem;
+            border: 1px solid $col_white;
     
+            background-color: transparent;
+            color: $col_white;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
 }

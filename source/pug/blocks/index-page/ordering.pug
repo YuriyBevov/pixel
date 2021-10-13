@@ -1,2 +1,51 @@
+-
+  const stepList = [
+    {
+      img: './assets/img/num.png',
+      imgAlt: 'Шаг №1',
+      imgWidth: '18',
+      imgHeight: '72',
+      title: 'Заголовок шага&nbsp;для заказа',
+      desc: 'Небольшое описание шага, желательно не привышать кол-во символов, желательный размер не превышает трех строк'
+    },
+
+    {
+      img: './assets/img/num.png',
+      imgAlt: 'Шаг №1',
+      imgWidth: '18',
+      imgHeight: '72',
+      title: 'Заголовок шага&nbsp;для заказа',
+      desc: 'Небольшое описание шага, желательно не привышать кол-во символов, желательный размер не превышает трех строк'
+    },
+
+    {
+      img: './assets/img/num.png',
+      imgAlt: 'Шаг №1',
+      imgWidth: '18',
+      imgHeight: '72',
+      title: 'Заголовок шага&nbsp;для заказа',
+      desc: 'Небольшое описание шага, желательно не привышать кол-во символов, желательный размер не превышает трех строк'
+    },
+
+    {
+      img: './assets/img/num.png',
+      imgAlt: 'Шаг №1',
+      imgWidth: '18',
+      imgHeight: '72',
+      title: 'Заголовок шага&nbsp;для заказа',
+      desc: 'Небольшое описание шага, желательно не привышать кол-во символов, желательный размер не превышает трех строк'
+    }
+  ]
+
 section.ordering
   .cmn__wrapper.ordering__wrapper
+    h1.cmn__title.ordering__title Заголовок про то как происходит заказ
+
+    ul.ordering__list
+      each step in stepList
+        li.ordering__item
+          .ordering__item-header
+            img(src= step.img alt= step.imgAlt width= step.imgWidth height= step.imgHeight)
+            h2!= step.title
+          .ordering__item-content
+            p.cmn__text.ordering__desc= step.desc

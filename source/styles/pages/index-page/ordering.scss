@@ -1,0 +1,38 @@
+.ordering {
+    padding-top: 3.2rem;
+    padding-bottom: 12.5rem;
+
+    &__title {
+        margin-bottom: 3.2rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 25%;
+        max-width: 41.6rem;
+        padding-right: 5rem;
+
+        &-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2rem;
+
+            img {
+                width: 1.8rem;
+                height: 7.2rem;
+                margin-right: 0.8rem;
+            }
+
+            h2 {
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+                max-width: 16.5rem;
+            }
+        }
+    }
+}

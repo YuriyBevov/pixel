@@ -1,2 +1,26 @@
 footer.footer
   .cmn__wrapper.footer__wrapper
+    .footer__about
+      a(href="index.html" aria-label="Обновить")
+        img(src="./assets/img/logo-white@1x.png" srcset="./assets/img/logo-white@2x.png" alt="Логотип" width="120" height="51")
+      
+      span © ИП Наименование 
+      span 2021 Политика конфиденциальности
+
+    .footer__order
+      h2.footer__order-title Заказать звонок
+
+      form(action="#" method="#").footer__order-form
+        .footer__order-form-wrapper
+          fieldset
+            input(type="text" id="user_name" placeholder="Как к вам обращаться?") 
+            input(type="text" id="user_phone" placeholder=" Номер телефона")
+          fieldset
+            input(type="checkbox" id="accept_rules").visually-hidden
+            label(for="accept_rules") Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой&nbsp;конфиденциальности</a>
+
+        button(type="submit").footer__order-btn Заказать
+        
+    .footer__info
+      a(href="tel:").cmn__text.cmn__text--white.cmn__text--bold 8 (953) 748 47 72
+      a(href="mailto:Pochta@gmail.com").cmn__text.cmn__text--white Pochta@gmail.com

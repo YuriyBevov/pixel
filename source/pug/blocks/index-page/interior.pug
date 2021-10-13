@@ -1,2 +1,31 @@
+-
+  const gallery = [
+    {
+      img: './assets/img/interior',
+      alt: 'Вариант интерьера',
+    },
+
+    {
+      img: './assets/img/interior',
+      alt: 'Вариант интерьера',
+    },
+
+    {
+      img: './assets/img/interior',
+      alt: 'Вариант интерьера',
+    },
+
+    {
+      img: './assets/img/interior',
+      alt: 'Вариант интерьера',
+    }
+  ]
+
 section.interior
   .cmn__wrapper.interior__wrapper
+    h1.cmn__title.interior__title Общий заголовок про интерьер.
+
+    ul.interior__gallery
+      each item in gallery
+        li.interior__item
+          img(src= item.img + '@1x.jpg' srcset= item.img + '@2x.jpg' alt= item.alt)

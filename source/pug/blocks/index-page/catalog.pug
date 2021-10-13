@@ -1,2 +1,59 @@
+include ../../mixins/btn
+
+-
+  const catalog = [
+    {
+      img: './assets/img/home',
+      imgAlt: 'План дома',
+      title: 'Название дома',
+      cost: '3 500 000 р.',
+      area: '35м2',
+      bedrooms: '3'
+    },
+
+    {
+      img: './assets/img/home',
+      imgAlt: 'План дома',
+      title: 'Название дома',
+      cost: '3 500 000 р.',
+      area: '35м2',
+      bedrooms: '3'
+    },
+
+    {
+      img: './assets/img/home',
+      imgAlt: 'План дома',
+      title: 'Название дома',
+      cost: '3 500 000 р.',
+      area: '35м2',
+      bedrooms: '3'
+    }
+  ]
+
 section.catalog
   .cmn__wrapper.catalog__wrapper
+    h1.cmn__title.catalog__title Каталог продукции
+
+    ul.catalog__list
+      each item in catalog
+        li.catalog__item
+          .catalog__item-header
+            img(src= item.img + '@1x.png'  srcset= item.img + '@2x.png' alt= item.imgAlt width="267" height="400")
+
+          .catalog__item-content
+            h2.cmn__text.catalog__item-content-title= item.title
+
+          .catalog__item-footer
+            .catalog__item-chars
+              span Стоимость: 
+                span= item.cost
+              span Площадь: 
+                 span= item.area
+              span Кол-во спален: 
+                 span= item.bedrooms
+
+            +btn('#', 'Подробнее')(class="cmn__btn catalog__btn")
+        
+      li.catalog__item.catalog__item--banner
+        include ../../components/catalog-banner
+
