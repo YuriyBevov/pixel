@@ -36,8 +36,8 @@
         &-form-wrapper {
             display: flex;
             flex-direction: column;
-            flex-grow: 1;
             margin-top: auto;
+            margin-right: 3rem;
         }
 
         &-title {
@@ -85,6 +85,8 @@
             line-height: 1.6rem;
             padding-left: 3rem;
             color: $col_white;
+
+            cursor: pointer;
 
             a {
                 font-size: 1.4rem;
