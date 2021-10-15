@@ -45,4 +45,49 @@
             color: $col_white;
         }
     }
+
+    &__modal {
+        width: 100%;
+        min-height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 100000000;
+      
+        &.closed {
+          display: none;
+        }
+      
+        &-wrapper {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+
+          overflow-y: auto;
+      
+          padding: 5.6rem 9.6rem;
+          background-color: $col_white;
+        
+          animation: showModal 0.7s forwards;
+
+          width: 67%;
+          max-width: 128rem;
+          height: fit-content;
+          max-height: 100vh;
+        }
+      }
+      
+      @keyframes showModal {
+        0% {
+          transform: translate(-100%, -50%) ;
+        }
+      
+        100% {
+          transform: translate(0, -50%);
+        }
+      }
 }
